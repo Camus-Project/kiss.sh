@@ -20,15 +20,28 @@ It generates signing keys, signs Bash scripts and verifies their integrity and c
 ## Usage
 
 ```sh
-# Generate a signing key pair (once)
-kiss keygen
-
-# Sign a script
-kiss sign my-script.sh
-
-# Verify its signature and compliance
-kiss check my-script.sh
+kiss.sh <command> [options] [<file>...]
 ```
+
+### Commands
+
+| Command | Description |
+|---|---|
+| `keygen [--key-dir <path>] [--days <n>]` | Generate Ed25519 key pair |
+| `check <file>` | Check script compliance |
+| `sign [options] <file>...` | Sign file(s) |
+| `verify [options] <file>` | Verify signature(s) |
+| `list-keys [--key-dir <path>]` | List available public keys |
+| `version` | Show version |
+| `help` | Show this help |
+
+### Options
+
+| Option | Description |
+|---|---|
+| `--key-dir <path>` | Key storage directory (default: `~/.config/camus`) |
+| `--signatory <name>` | Signatory name (optional, prompts if absent) |
+| `--pubkey <path>` | Use specific public key |
 
 ## Documentation
 
