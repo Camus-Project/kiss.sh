@@ -2,16 +2,16 @@
 
 > Applies the Camus Method to Bash.
 
-`kiss.sh` is the companion tool for applying the Camus Method to Bash.
+`kiss.sh` is the companion tool for applying [the Camus Method](https://camus-project.github.io/The-Camus-Method/) to Bash.
 
-It generates signing keys, signs Bash scripts and verifies their integrity and compliance with the Bash specification of the Camus Method.
+It generates signing keys, signs Bash scripts and verifies their integrity and compliance with [Camus.sh](https://camus-project.github.io/adaptations/Camus.sh/), the Bash specification of the Camus Method.
 
 ## Features
 
 * Generate signing key pairs.
 * Sign Bash scripts.
 * Verify signatures.
-* Validate compliance with the Bash specification of the Camus Method.
+* Validate compliance with Camus.sh.
 
 ## Installation
 
@@ -43,12 +43,20 @@ kiss.sh <command> [options] [<file>...]
 | `--signatory <name>` | Signatory name (optional, prompts if absent) |
 | `--pubkey <path>` | Use specific public key |
 
-## Documentation
-
-The Camus Method and the Bash specification are available at:
-
-https://camus-project.github.io
+## The Camus Project
+kiss.sh is part of the [The Camus Project](https://camus-project.github.io):
+> The Camus Project is a community effort to provide a method, specification language, programming language, and tooling for software where humans express intent, AI generates implementations, and humans assume responsibility for the resulting code.
+> The project aims to make AI-generated software understandable, auditable, and certifiable.
 
 ## License
 
 MIT
+
+---
+<pre>
+*camus-sig-1*
+**Signed -- Lan Jing**
+Date: 2026-07-07T14:23:24Z
+Fingerprint: SHA256:52:69:05:07:66:BD:DE:55:C7:D2:B1:52:9C:8F:ED:7B:05:E3:8E:57:7E:10:98:1E:7C:BD:13:96:85:4E:83:89
+Signature: HoJbaCNMvpGSBRm/GzbSYbWREHIjagT1MLBp655BC8Q5GftXveiVaNMFVlYtTozqItFT9bLehehlepZToON4Dw==
+</pre>
